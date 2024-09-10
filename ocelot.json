@@ -1,0 +1,32 @@
+{
+    "Routes": [
+        {
+            "UpstreamPathTemplate": "/Users",
+            "UpstreamHttpMethod": [
+                "Get"
+            ],
+            "DownstreamPathTemplate": "/api/Users/All",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "usersApp",
+                    "Port": "8080"
+                }
+            ]
+        },
+        {
+            "UpstreamPathTemplate": "/api/Registration",
+            "UpstreamHttpMethod": [
+                "Post"
+            ],
+            "DownstreamPathTemplate": "/api/Identity/SignUp",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "identityApp",
+                    "Port": "8080"
+                }
+            ]
+        }
+    ]
+}
