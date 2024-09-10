@@ -1,0 +1,6 @@
+@DockerExam_GatewayApp_HostAddress = http://localhost:5038
+
+GET {{DockerExam_GatewayApp_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
